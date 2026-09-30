@@ -106,10 +106,15 @@ This returns live hosts plus MAC addresses, and Nmap often maps the MAC prefix (
 | Set-top / TV box vendor | Media streamer |
 | IoT platform vendors (×2) | Smart-home devices (bulbs / switches) |
 
-### Lesson: passive-ish recon is powerful
-Vendor identification alone hands you a lot of intel — "there's an IoT-platform device here"
-immediately tells a tester which known platform vulnerabilities to research, before any
-active probing.
+### Lesson: cheap intel before you touch a port
+Vendor identification from a single sweep hands you a lot of intel — "there's an IoT-platform
+device here" immediately tells a tester which known platform vulnerabilities to research,
+before any port scanning.
+
+> **Terminology note:** a host-discovery sweep is still **active** recon — you're
+> transmitting packets to the target. True *passive* recon touches the target zero times
+> (e.g. Shodan/Censys lookups, reading public SSL certificates, OSINT). OUI vendor mapping
+> is cheap and early, but it is not passive.
 
 ---
 
@@ -175,7 +180,7 @@ for services that are **open and responding**, and the vulnerability belongs to 
 | NAT vs. Bridged networking | NAT isolates the VM; bridged puts it on the real LAN |
 | External vs. internal attack surface | Router: sealed outside, service-rich inside |
 | Port states | open / closed / filtered and what each implies |
-| Passive vs. active recon | Vendor OUI mapping yields intel before active probing |
+| Passive vs. active recon | Sweeps/OUI mapping are active; passive = zero-touch (Shodan, cert/OSINT) |
 | Reading raw `-sV` fingerprints | "Unrecognized service" is not an error — read the banner by eye |
 | Hairpin NAT caveat | Scanning your public IP from inside ≠ a true external scan |
 
