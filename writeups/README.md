@@ -8,6 +8,7 @@ Room walkthroughs, solutions, and lab exercises.
 |---|---|---|
 | [Blue](thm-blue.md) | Easy | EternalBlue (MS17-010), SMB, Meterpreter |
 | [Takeover](thm-takeover.md) | Easy | Subdomain enumeration, SSL/SAN inspection |
+| [Pickle Rick](thm-pickle-rick.md) | Easy | Web enum, command execution, privilege escalation |
 
 ## Lab Exercises
 
