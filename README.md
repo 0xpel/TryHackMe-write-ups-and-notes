@@ -29,6 +29,7 @@ through the cybersecurity learning path toward Red Team / Penetration Testing.
 | [Blue](writeups/thm-blue.md) | Easy | EternalBlue (MS17-010), SMB, Meterpreter |
 | [Takeover](writeups/thm-takeover.md) | Easy | Subdomain enumeration, SSL/SAN inspection |
 | [Pickle Rick](writeups/thm-pickle-rick.md) | Easy | Web enum, command execution, privilege escalation |
+| [RootMe](writeups/thm-rootme.md) | Easy | File-upload RCE, reverse shell, SUID privilege escalation |
 
 ## 🧪 Lab Notes
 
@@ -43,4 +44,4 @@ through the cybersecurity learning path toward Red Team / Penetration Testing.
 ## 📑 Cheat Sheets
 
 Quick-reference sheets in [`/cheatsheets`](cheatsheets/) — [Nmap](cheatsheets/nmap.md),
-[OSINT](cheatsheets/osint.md), and [Linux](cheatsheets/linux.md). For education and authorized testing only.
+[OSINT](cheatsheets/osint.md), [Linux](cheatsheets/linux.md), and [Linux PrivEsc](cheatsheets/linux-privesc.md). For education and authorized testing only.
